@@ -104,11 +104,10 @@ assignment_3/
 
 ### Dataset Summary
 ```
-Selected Classes:
-- airplane: 150 samples
-- bicycle: 120 samples
+•	airplane: 60 samples
+•	coin: 60 samples
+Total: 120 samples
 
-Total Samples: 270
 ```
 
 ## 🐧 PyCharm + WSL Deployment
