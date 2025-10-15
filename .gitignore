@@ -1,0 +1,69 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+
+# Logs
+*.log
+
+# Checkpoints (uncomment if you don't want to track checkpoints)
+# checkpoints/
+
+# Exclude VideoX folder (we only need SeqTrack subfolder)
+VideoX/
+
+# Exclude SeqTrack folder (now managed outside this repo)
+SeqTrack/
+
+# Local caches and extracted datasets
+.cache/
+lasot_extract/
+
+# Do not track training checkpoints
+checkpoints/
+

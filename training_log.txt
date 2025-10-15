@@ -1,0 +1,35 @@
+2025-10-15 15:44:29,510 - INFO - === Assignment 3 SeqTrack Training Started ===
+2025-10-15 15:44:29,510 - INFO - Seed: 8, Epochs: 5, Patch Size: 1
+2025-10-15 15:44:29,662 - INFO - Using device: CUDA:0 - NVIDIA GeForce RTX 3060 Laptop GPU
+2025-10-15 15:44:30,887 - INFO - Initializing training...
+2025-10-15 15:44:32,471 - INFO - Real SeqTrack model initialized successfully
+2025-10-15 15:44:32,786 - INFO - Training on 120 samples
+2025-10-15 15:44:32,786 - INFO - Selected classes: ['airplane', 'coin']
+2025-10-15 15:44:32,791 - INFO - Starting epoch 1/5
+2025-10-15 15:44:37,689 - INFO - Epoch 1 : 56 / 120 samples , time for last 50 samples : 0:00:04 , time since beginning : 0:00:06 , time left to finish the epoch : 0:00:06
+2025-10-15 15:44:40,749 - INFO - Epoch 1 : 104 / 120 samples , time for last 50 samples : 0:00:03 , time since beginning : 0:00:09 , time left to finish the epoch : 0:00:00
+2025-10-15 15:44:41,802 - INFO - Epoch 1 completed - Loss: 1.1203, IoU: 0.4737
+2025-10-15 15:44:46,129 - INFO - Checkpoint saved: checkpoints/epoch_1.ckpt
+2025-10-15 15:44:46,133 - INFO - Starting epoch 2/5
+2025-10-15 15:44:49,970 - INFO - Epoch 2 : 56 / 120 samples , time for last 50 samples : 0:00:03 , time since beginning : 0:00:19 , time left to finish the epoch : 0:00:04
+2025-10-15 15:44:53,024 - INFO - Epoch 2 : 104 / 120 samples , time for last 50 samples : 0:00:03 , time since beginning : 0:00:22 , time left to finish the epoch : 0:00:00
+2025-10-15 15:44:54,068 - INFO - Epoch 2 completed - Loss: 1.0618, IoU: 0.4737
+2025-10-15 15:44:57,905 - INFO - Checkpoint saved: checkpoints/epoch_2.ckpt
+2025-10-15 15:44:57,908 - INFO - Starting epoch 3/5
+2025-10-15 15:44:59,751 - INFO - Epoch 3 : 56 / 120 samples , time for last 50 samples : 0:00:01 , time since beginning : 0:00:28 , time left to finish the epoch : 0:00:02
+2025-10-15 15:45:02,805 - INFO - Epoch 3 : 104 / 120 samples , time for last 50 samples : 0:00:03 , time since beginning : 0:00:31 , time left to finish the epoch : 0:00:00
+2025-10-15 15:45:03,844 - INFO - Epoch 3 completed - Loss: 1.0525, IoU: 0.4737
+2025-10-15 15:45:08,106 - INFO - Checkpoint saved: checkpoints/epoch_3.ckpt
+2025-10-15 15:45:08,111 - INFO - Starting epoch 4/5
+2025-10-15 15:45:12,983 - INFO - Epoch 4 : 56 / 120 samples , time for last 50 samples : 0:00:04 , time since beginning : 0:00:42 , time left to finish the epoch : 0:00:06
+2025-10-15 15:45:16,171 - INFO - Epoch 4 : 104 / 120 samples , time for last 50 samples : 0:00:03 , time since beginning : 0:00:45 , time left to finish the epoch : 0:00:01
+2025-10-15 15:45:17,220 - INFO - Epoch 4 completed - Loss: 1.0497, IoU: 0.4737
+2025-10-15 15:45:22,106 - INFO - Checkpoint saved: checkpoints/epoch_4.ckpt
+2025-10-15 15:45:22,110 - INFO - Starting epoch 5/5
+2025-10-15 15:45:28,353 - INFO - Epoch 5 : 56 / 120 samples , time for last 50 samples : 0:00:06 , time since beginning : 0:00:57 , time left to finish the epoch : 0:00:07
+2025-10-15 15:45:29,506 - INFO - Epoch 5 : 104 / 120 samples , time for last 50 samples : 0:00:01 , time since beginning : 0:00:58 , time left to finish the epoch : 0:00:00
+2025-10-15 15:45:30,549 - INFO - Epoch 5 completed - Loss: 1.0484, IoU: 0.4737
+2025-10-15 15:45:34,704 - INFO - Checkpoint saved: checkpoints/epoch_5.ckpt
+2025-10-15 15:45:34,705 - INFO - Training completed successfully in 0:01:03
+2025-10-15 15:45:34,705 - INFO - Checkpoints saved in: checkpoints/
+2025-10-15 15:45:34,705 - INFO - Log file: training_log.txt
