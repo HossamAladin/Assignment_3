@@ -3,6 +3,7 @@
 **Team Number:** 8  
 **Course:** Image Processing - Level 4  
 **Repository:** [https://github.com/HossamAladin/Assignment_3.git](https://github.com/HossamAladin/Assignment_3.git)
+**Repository(HuggingFace):** [https://huggingface.co/hossamaladdin/Assignment3](https://huggingface.co/hossamaladdin/Assignment3/tree/main)
 
 ## 📋 Overview
 
