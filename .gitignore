@@ -65,11 +65,10 @@ AppData/
 *.jtx
 
 # Large files that shouldn't be in git
-*.ckpt
-checkpoints/
 *.bin
 *.safetensors
 
 # But keep the assignment files
+!checkpoints/
 !checkpoints/epoch_*.ckpt
 !training_log.txt
