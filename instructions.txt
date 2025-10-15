@@ -1,0 +1,80 @@
+# SeqTrack Assignment 3 - Running Instructions
+
+## Prerequisites
+- WSL + PyCharm
+- Conda installed
+- Git installed
+- Internet connection for downloading datasets and uploading checkpoints
+
+## Step 1: Clone the VideoX Repository with Sparse Checkout
+```
+git clone --no-checkout https://github.com/microsoft/VideoX.git
+cd VideoX
+git sparse-checkout init --cone
+git sparse-checkout set SeqTrack
+git checkout
+cd SeqTrack
+```
+
+## Step 2: Copy Assignment Files
+Copy all the following files into the SeqTrack directory:
+- dataset_loader.py
+- seqtrack_train.py
+- setup_env.sh
+- environment.yml
+- assignment_3.md
+
+## Step 3: Set Up Environment
+```
+bash setup_env.sh
+conda activate seqtrack
+```
+
+## Step 4: Set Hugging Face Token
+```
+export HF_TOKEN=your_huggingface_token_here
+```
+Note: Replace "your_huggingface_token_here" with your actual Hugging Face token.
+
+## Step 5: Load and Filter Dataset
+```
+python dataset_loader.py --classes airplane bicycle
+```
+This will:
+- Load the LaSOT dataset from Hugging Face
+- Filter it to include only airplane and bicycle classes
+- Save dataset statistics to dataset_summary.txt
+
+## Step 6: Train the Model
+For full training (5 epochs):
+```
+python seqtrack_train.py --classes airplane bicycle --epochs 5 --seed 8 --patch_size 8 --workers 1
+```
+
+For a quick test (1 epoch):
+```
+python seqtrack_train.py --classes airplane bicycle --epochs 1 --seed 8 --patch_size 8 --workers 1
+```
+
+## Expected Outputs
+After successful execution, you should have:
+- checkpoints/epoch_1.ckpt through epoch_5.ckpt
+- training_log.txt with detailed logs
+- dataset_summary.txt with class information
+- assignment_3.md report with metrics
+- logs/ directory with TensorBoard logs
+
+## Troubleshooting
+- If you encounter CUDA issues, the code will automatically fall back to CPU
+- If dataset loading fails, try different dataset names with --dataset parameter
+- If HF upload fails, check your token and internet connection
+
+## Parameters
+You can customize the training with these parameters:
+- --classes: Two class names to filter (default: airplane bicycle)
+- --epochs: Number of epochs to train (default: 5)
+- --seed: Random seed (default: 8)
+- --batch_size: Batch size (default: 16)
+- --workers: Number of data loading workers (default: 1)
+- --patch_size: Patch size for ViT backbone (default: 8)
+- --hf_repo: Hugging Face repo ID (default: hossamaladdin/Assignment3)
